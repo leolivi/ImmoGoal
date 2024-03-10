@@ -10,8 +10,9 @@
     /* Fonts */
     --body-font: "BarlowLight", "sans-serif";
     --heading-font: "BarlowSemiBold", "sans-serif";
-    --h1-size: 7.5rem;
-    --h1-mobile-size: 3.5rem;
+    --quotation-font: "BarlowLightItalic", "sans-serif";
+    --h1-size: 3.5rem;
+    --h1-mobile-size: 1.5rem;
     --text-size: 1.5rem;
     --text-mobile-size: 1.2rem;
     --small-size: 1.2rem;
@@ -38,22 +39,63 @@
     font-family: BarlowLight;
     src: url(/assets/fonts/Barlow/Barlow-Light.ttf);
 }
- /* Fonts and Sizes */
 
-li {
+@font-face {
+    font-family: BarlowLightItalic;
+    src: url(/assets/fonts/Barlow/Barlow-LightItalic.ttf);
+}
+ /* Fonts and Sizes */
+h1 {
+    font-family: var(--body-font);
+    font-size: var(--h1-mobile-size);
+    font-weight: 100;
+    color: var(--text-color-lm);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: var(--text-mobile-size);
+    font-weight: 100;
+    color: var(--text-color-lm);
+}
+
+h3 {
     font-family: var(--body-font);
     font-size: var(--text-mobile-size);
+    color: var(--text-color-lm);
+}
+
+p, li, span {
+    font-family: var(--body-font);
+    font-size: var(--text-mobile-size);
+    color: var(--text-color-lm);
 }
 
 .small {
     font-size: var(--small-mobile-size);
+    color: var(--text-color-lm);
 }
 
+.button {
+    font-family: var(--heading-font);
+    font-size: var(--small-mobile-size);
+    background-color: var(--background-color-dm);
+    color: var(--text-color-dm);
+}
+
+.quotation {
+    font-family: var(--quotation-font);
+    font-size: var(--small-mobile-size);
+}
 
 /* ---------- Stylings ---------- */
 i, a {
     text-decoration: none;
     color: var(--text-color-lm);
+}
+
+li {
+    list-style: none;
 }
 
 html {
@@ -76,16 +118,35 @@ button {
     font: inherit;
 }
 
+.button {
+    padding: 0.5rem 0.8rem;
+}
+
 .dm {
     display: none;
+}
+
+.arrow-lm {
+    background-color: var(--background-color-dm);
+    border-radius: 50%;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color: var(--background-color-lm);
+    }
 }
 
 /* Header */
 
 header {
-    height: 20vh;
+    max-height: 20vh;
+    min-height: 15vh;
     width: 100%;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 1rem;
 
     nav {
         display: flex;
@@ -102,46 +163,41 @@ header {
 
 .burger-icon {
     color: var(--text-color-lm);
-    margin: none;
-
-    #close-icon {
-        display: none;
-    }
 }
 
 /* Footer */
 footer {
-    height: 50vh;
+    height: auto;
     width: 100%;
-    padding: 1rem 2rem 2rem;
+    padding: 1rem 2rem;
     border-top: 2px solid var(--text-color-lm);
+}
 
-    .footer-container {
-        list-style-type: none;
-        li {
-            padding: 1rem 0;
-            border-bottom: 2px solid var(--text-color-lm);
-            cursor: pointer;
+.footer-container {
+    list-style-type: none;
+    li {
+        padding: 1rem 0;
+        border-bottom: 2px solid var(--text-color-lm);
+        cursor: pointer;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .small-logo {
+            width: 7rem;
+            height: auto;
         }
 
-        li:last-child {
-            border-bottom: none;
-        }
-
-        .footer-grid {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            .small-logo {
-                width: 7rem;
-                height: auto;
-            }
-
-            .small {
-                text-align: right;
-            }
+        .small {
+            text-align: right;
         }
     }
 }
@@ -149,7 +205,12 @@ footer {
 
 /* Dark Mode */
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+    
+    body, header {
+        background-color: var(--background-color-dm);
+    }
+
     .dm {
         display: block;
     }
@@ -158,19 +219,31 @@ footer {
         display: none;
     }
 
-    i, a {
-    color: var(--text-color-dm);
-    }
-
-    body, header {
-        background-color: var(--background-color-dm);
-    }
-
+    /* Header */
     .burger-icon {
-        color: var(--text-color-dm);
+        color: var(--background-color-lm);
         margin: none;
     }
 
+    /* Fonts */
+    h1, h2, h3, small, p, li, span, i, a  {
+        color: var(--text-color-dm);
+    }
+
+    /* Buttons and Arrows */
+    .button {
+        background-color: var(--background-color-lm);
+        color: var(--text-color-lm);
+    }
+
+    .arrow-lm {
+        background-color: var(--background-color-lm);
+        i {
+            color: var(--background-color-dm);
+        }
+    }
+
+    /* Footer */
     footer {
         background-color: var(--background-color-dm);
         border-top: 2px solid var(--text-color-dm);
@@ -179,4 +252,4 @@ footer {
             border-bottom: 2px solid var(--text-color-dm);
         }
     }
-} */
+}

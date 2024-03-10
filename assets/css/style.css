@@ -1,0 +1,126 @@
+/* Landingpage Homepage */
+.landingpage {
+    padding: 1rem 2rem 0;
+    height: auto;
+
+    div {
+        margin: 0rem 0rem 2rem;
+    }
+}
+
+.image-container-homepage {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+    img {
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+.services-overview {
+    margin: 2rem 0;
+} 
+
+
+/* ---- Main ---- */
+.section {
+    margin: 0 2rem;
+    padding: 0 0 2rem;
+
+    h2 {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .left {
+        transform: translateX(10px);
+    }
+
+    .right {
+        transform: translateX(-10px);
+    }
+}
+
+/* Immo Teaser Section */
+.immo-teaser {
+    border-top: 2px solid var(--text-color-lm);
+    border-bottom: 2px solid var(--text-color-lm);
+
+    .immo-teaser-slider {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    
+        div{
+            height: 20vh;
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dot-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 0.5rem 0;
+
+        div {
+            background-color: var(--background-color-dm);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        div:nth-child(2) {
+            background-color: var(--highlight-color);
+        }
+
+        div:hover {
+            background-color: var(--highlight-color);
+        }
+    }
+}
+
+/* Feedback Section */
+.feedback-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .feedback-text-container {
+        border: 2px solid var(--text-color-lm);
+        padding: 1.5rem;
+        height: auto;
+        width: 100%;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: var(--background-color-dm);
+    }
+
+    .immo-teaser {
+        border-top: 2px solid var(--text-color-dm);
+        border-bottom: 2px solid var(--text-color-dm);
+    }
+
+    .feedback-container > .feedback-text-container {
+        border: 2px solid var(--background-color-lm);
+    }
+}

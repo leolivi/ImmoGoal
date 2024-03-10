@@ -1,0 +1,29 @@
+/* Navigation */
+.navigation-container {
+    height: 80vh;
+    width: 100%;
+    padding: 3rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li:last-child {
+        border-bottom: 2px solid var(--text-color-lm);
+    }
+}
+
+.navigation-toggles {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* Dark Mode */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-color-dm);
+    }
+} */
