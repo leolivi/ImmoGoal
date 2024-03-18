@@ -2,6 +2,8 @@
 .landingpage {
     padding: 1rem 2rem 0;
     height: auto;
+    border-bottom: 2px solid var(--text-color-dm);
+    margin: 0 2rem;
 
     div {
         margin: 0rem 0rem 2rem;
@@ -23,7 +25,14 @@
 
 .services-overview {
     margin: 2rem 0;
-} 
+    list-style: url("../illustrations/graphics/List-Style_Services-lm.svg");
+    padding: 0 5.5rem;
+    overflow: hidden;
+
+    /* li::marker {
+        width: 10px;
+    } */
+}
 
 
 /* ---- Main ---- */
@@ -32,7 +41,7 @@
     padding: 0 0 2rem;
 
     h2 {
-        padding: 2rem 0 1.5rem;
+        padding: 2rem 2rem 1.5rem;
     }
 
     .left {
@@ -46,15 +55,16 @@
 
 /* Immo Teaser Section */
 .immo-teaser {
-    border-top: 2px solid var(--text-color-lm);
     border-bottom: 2px solid var(--text-color-lm);
+    margin: 0 2rem;
 
     .immo-teaser-slider {
         display: flex;
         align-items: center;
         width: 100%;
+        height: fit-content;
     
-        div{
+        .slider{
             height: 20vh;
             width: 100%;
         }
@@ -66,7 +76,7 @@
         }
     }
 
-    .dot-container {
+    /* .dot-container {
         width: 100%;
         height: auto;
         display: flex;
@@ -74,21 +84,21 @@
         gap: 5px;
         margin: 0.5rem 0;
 
-        div {
+        .dot {
             background-color: var(--background-color-dm);
             width: 8px;
             height: 8px;
             border-radius: 50%;
         }
 
-        div:nth-child(2) {
+        .dot:nth-child(2) {
             background-color: var(--highlight-color);
         }
 
-        div:hover {
+        .dot:hover {
             background-color: var(--highlight-color);
         }
-    }
+    } */
 }
 
 /* Feedback Section */
@@ -115,12 +125,87 @@
         background-color: var(--background-color-dm);
     }
 
+    .landingpage {
+        border-bottom: 2px solid var(--text-color-dm);
+    }
+
+    .services-overview {
+        list-style: url("../illustrations/graphics/List-Style_Services-dm.svg")
+        /* list-style-image: url("../illustrations/graphics/List-Style_Services-dm.svg"); */
+    } 
+
     .immo-teaser {
-        border-top: 2px solid var(--text-color-dm);
         border-bottom: 2px solid var(--text-color-dm);
     }
 
     .feedback-container > .feedback-text-container {
         border: 2px solid var(--background-color-lm);
     }
+
+    /* .dot {
+        background-color: var(--background-color-lm);
+    } */
+
+    /* .dot:nth-child(2) {
+        background-color: var(--highlight-color);
+    }
+
+    .dot:hover {
+        background-color: var(--highlight-color);
+    } */
 }
+
+/* Responsiveness */
+@media (min-width: 480px) {
+    .image-container-homepage > img {
+        width: 70%;
+    }
+
+    .immo-teaser-slider > .slider{
+            height: 30vh; 
+    }
+}
+
+@media (min-width: 768px) {
+    .landingpage{
+        padding: 1rem 4rem 0;
+    }
+
+    .section {
+        /* margin: 0 2rem; */
+        padding: 0 4rem 2rem;
+    }
+
+    .immo-teaser-slider > .slider {
+        height: 40vh;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        /* margin: 0 6rem; */
+        padding: 0 6rem 2rem;
+    }
+
+    .feedback {
+        padding: 0 6rem 6rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding: 0 10rem 2rem;
+    }
+}
+
+/* ---------- To Do's ---------- */
+/* 
+- Image slider height wird nicht angepasst
+- same for Feedback section
+- 
+*/

@@ -13,6 +13,7 @@
     <!-- Javascript -->
 </head>
 <body>
+<div class="desktop-container">
     <!-- Navigation -->
     <header>
         <nav>
@@ -23,6 +24,26 @@
             </button>
         </nav>
     </header>
+    <!-- Desktop Menu -->
+    <nav class="nav-desktop-menu">
+        <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
+        <ul class="nav-desktop-container">
+            <li><a href="immobilien.html">Immobilien</a></li>
+            <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+            <li><a href="about.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-desktop-grid">
+                <div class="small"><a href="impressum.html">Impressum</a> <br> <a href="datenschutz.html">Datenschutz</a></div>
+            </li>
+        </ul>
+        <div class="menu-toggle-container">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            <p>DE/EN/FR</p>
+        </div>
+    </nav>
+</div>
+<div class="desktop-container">
+    <!-- Main -->
     <main>
         <!-- Landingpage -->
         <section class="landingpage">
@@ -30,9 +51,9 @@
             <div class="image-container-homepage"><img src="assets/illustrations/images/image-building-hp.jpg" alt=""></div>
             <div>
                 <ul class="services-overview">
-                    <span></span><li>Immobilienverkauf</li>
-                    <span></span><li>Immobilienkauf</li>
-                    <span></span><li>Immobilienbewertung</li>
+                    <span></span><li><a href="dienstleistungen.html">Immobilienverkauf</a></li>
+                    <span></span><li><a href="dienstleistungen.html">Immobilienkauf</a></li>
+                    <span></span><li><a href="dienstleistungen.html">Immobilienbewertung</a></li>
                 </ul>
                 <button class="services button">Mehr erfahren</button>
             </div>
@@ -42,16 +63,16 @@
             <h2>Immobilien</h2>
             <div class="immo-teaser-slider">
                 <span class="arrow-lm left"><i class="fa-solid fa-chevron-left"></i></span>
-                <div>
+                <div class="slider">
                     <img class="slides" src="assets/illustrations/images/image-immobilie.jpg" alt="">
                 </div>
                 <span class="arrow-lm right"><i class="fa-solid fa-chevron-right"></i></span>
             </div>
-            <div class="dot-container">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <!-- <div class="dot-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div> -->
         </section>
         <!-- Feedback Section -->
         <section class="feedback section">
@@ -78,5 +99,6 @@
             </li>
         </ul>
     </footer>
+</div>
 </body>
 </html>
