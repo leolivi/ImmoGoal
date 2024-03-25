@@ -11,8 +11,10 @@
     --body-font: "BarlowLight", "sans-serif";
     --heading-font: "BarlowSemiBold", "sans-serif";
     --quotation-font: "BarlowLightItalic", "sans-serif";
-    --h1-size: 3.5rem;
-    --h1-mobile-size: 1.5rem;
+    --teaser-size: 2.2rem;
+    --teaser-mobile-size: 1.2rem;
+    --h1-size: 1.5rem,
+    --h1-mobile-size: 1rem,
     --text-size: 1.5rem;
     --text-mobile-size: 1.2rem;
     --small-size: 1.2rem;
@@ -45,6 +47,13 @@
     src: url(/assets/fonts/Barlow/Barlow-LightItalic.ttf);
 }
  /* Fonts and Sizes */
+.teaser {
+    font-family: var(--body-font);
+    font-size: clamp(var(--teaser-mobile-size), 5vw, var(--teaser-size));
+    font-weight: 100;
+    color: var(--text-color-lm);
+}
+
 h1 {
     font-family: var(--body-font);
     font-size: var(--h1-mobile-size);
@@ -76,7 +85,7 @@ p, li, span {
     color: var(--text-color-lm);
 }
 
-/* .small:hover {
+/* .small >a:hover {
     font-family: var(--heading-font);
     color: var(--text-color-lm);
 } */
@@ -238,6 +247,10 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        i:hover {
+            color: var(--highlight-color);
+        }
     }
 }
 
@@ -275,6 +288,10 @@ footer {
         .small {
             text-align: right;
         }
+
+        .small > a:hover {
+            text-align: right;
+        }
     }
 }
 
@@ -305,11 +322,6 @@ footer {
         font-family: var(--body-font);
     }
 
-    /* Desktop Nav */
-    .menu-toggle-container > i {
-        color: var(--highlight-color);
-    }
-
     /* Header */
     .burger-icon {
         color: var(--background-color-lm);
@@ -317,7 +329,7 @@ footer {
     }
 
     /* Fonts */
-    h1, h2, h3, small, p, li, span, i, a  {
+    h1, h2, h3, small, p, li, span, i, a, .teaser  {
         color: var(--text-color-dm);
     }
 
@@ -345,6 +357,10 @@ footer {
 
         .nav-desktop-container > li {
             border-bottom: 2px solid var(--text-color-dm);
+        }
+
+        .menu-toggle-container > i:hover {
+            color: var(--highlight-color);
         }
     }
 

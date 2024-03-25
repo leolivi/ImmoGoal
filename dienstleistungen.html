@@ -7,24 +7,97 @@
 
     <!-- Stylelinks -->
     <link rel="stylesheet" href="assets/css/universal.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dienstleistungen.css">
     <!-- External Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Javascript -->
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
-            <button class="burger-icon">
-                <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
-                <!-- <i class="fa-solid fa-xmark fa-2x" id="close-icon"></i> -->
-            </button>
+    <div class="desktop-container">
+        <!-- Header -->
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
+                <button class="burger-icon">
+                    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+                    <i class="fa-solid fa-xmark fa-2x" id="close-icon" style="display: none;"></i>
+                </button>
+            </nav>
+        </header>
+        <!-- Desktop Menu -->
+        <nav class="nav-desktop-menu">
+            <div class="nav-section">
+                <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
+                <ul class="nav-desktop-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="immobilien.html">Immobilien</a></li>
+                    <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li><a href="about.html">Über mich</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-desktop-grid">
+                        <div class="small"><a href="impressum.html">Impressum</a> <br> <a href="datenschutz.html">Datenschutz</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-toggle-container">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <p>DE/EN/FR</p>
+            </div>
         </nav>
-    </header>
-    <main>
-
-    </main>
+    </div>
+    <div class="desktop-container">
+        <!-- Main -->
+        <main>
+            <!-- Title Section -->
+            <section class="title-section">
+                <div><h1>- Dienstleistungen</h1></div>
+                <div><p class="teaser">Finden, verkaufen, bewerten. <br> Unsere Expertise, <br> Ihr Erfolg!</p></div>
+                <div class="image-container-homepage"><img src="assets/illustrations/images/image-football-goal.jpg" alt=""></div>
+<!-- Add WebP Option!! -->
+            </section>
+            <section class="dienstleistungen-section">
+                <div class="kauf-container">
+                    <h2>Kaufinteresse</h2>
+                    <p>Sie suchen nach der passenden Liegenschaft resp. der passenden Wohnung? Gerne vermerke ich Sie in meiner Sucherkartei und melde Ihnen, falls erwünscht, passende neue Angebote bevor diese auf dem öffentlichen Markt platziert werden. Teilen Sie mir jetzt Ihre Suchkriterien mit und senden Sie mir Ihre Kontaktanfrage.</p>
+                    <button class="contact button">Kontaktanfrage</button>
+                </div>
+                <div class="verkauf-container">
+                    <h2>Verkauf</h2>
+                    <p>Mit Hingabe und Teamgeist erreichen wir einen optimalen Verkauf Ihrer Liegen-schaft! Bei der Vermarktung bis hin zum Verkauf halten Sie als Eigentümerschaft die Zügel in den Händen. </p>
+                    <!-- <select name="dl-button" id=dl-select" class="dl-select">
+                        <option value="X">Gerne übernehme ich ihnen<i class="fa-solid fa-chevron-down"></i></option>
+                        <option value="1">Erstellung eines Verkaufsdossier</option>
+                        <option value="2">Aufschaltung diverser Inserate im Internet</option>
+                        <option value="3">Besichtigungstermine</option>
+                        <option value="4">Verhandlungsgespräche</option>
+                        <option value="5">Reservationen</option>
+                        <option value="6">Notarterminierung</option>
+                    </select> -->
+                    <button class="accordion button">Gerne übernehme ich Ihnen<i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="panel">
+                            <p>
+                                - Erstellung eines Verkaufsdossier <br>
+                                - Aufschaltung diverser Inserate im Internet <br>
+                                - Besichtigungstermine <br>
+                                - Verhandlungsgespräche <br>
+                                - Reservationen <br>
+                                - Notarterminierung <br>
+                            </p>
+                        </div>
+                    <p>Eine Provision wird lediglich bei erfolgreicher Vermittlung fällig. Zudem bieten meine verschiedenen Partnerfirmen ein breites Spektrum in jeglichen Bereichen an, welches für den Verkauf resp. den Kauf optimal ausgeschöpft werden kann.</p>
+                </div>
+                <div class="bewertung-container">
+                    <h2>Immobilienbewertung</h2>
+                    <p>
+                        Sie wollen Ihren Liegenschaftswert ermitteln? Viele Faktoren spielen hierbei eine entscheidende Rolle. Grundstückswert, Lage, Renova-tionen, Aus-/Anbau-möglichkeiten, Besonderheiten etc. Gerne bewerte ich Ihre Liegenschaft/Wohnung, damit Sie einen bewussten Schritt in den Verkauf tätigen können. 
+                        <br><br>
+                        Sollte die Bewertung im Zusammenhang mit einer Vermarktungserteilung stehen, ist diese kostenlos.
+                    </p>
+                </div>
+            </section>
+        </main>
     <footer>
         <ul class="footer-container">
             <li><a href="immobilien.html">Immobilien</a></li>
@@ -38,4 +111,25 @@
         </ul>
     </footer>
 </body>
+<script>
+    // Accordion DL
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+</script>
 </html>

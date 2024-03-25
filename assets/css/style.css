@@ -38,7 +38,7 @@
 /* ---- Main ---- */
 .section {
     margin: 0 2rem;
-    padding: 0 0 2rem;
+    padding: 0 0rem 2rem;
 
     h2 {
         padding: 2rem 2rem 1.5rem;
@@ -65,7 +65,6 @@
         height: fit-content;
     
         .slider{
-            height: 20vh;
             width: 100%;
         }
 
@@ -112,6 +111,11 @@
         padding: 1.5rem;
         height: auto;
         width: 100%;
+
+        .quotation {
+            hyphens: auto;
+            /* text-align: justify; */
+        }
     }
 
     h3 {
@@ -156,14 +160,35 @@
 }
 
 /* Responsiveness */
+
+@media (min-width: 479px) {
+    .section {
+        padding: 0 2rem 2rem;
+    }     
+}
+
+@media (max-width: 479px) {
+    .immo-teaser-slider {
+        .slider{
+            height: 20vh; 
+        }
+    } 
+}
+
 @media (min-width: 480px) {
     .image-container-homepage > img {
         width: 70%;
     }
 
-    .immo-teaser-slider > .slider{
+    .immo-teaser-slider {
+        .slider{
             height: 30vh; 
+        }
     }
+    
+    /* .feedback-text-container {
+        min-height: 20vh;
+    } */
 }
 
 @media (min-width: 768px) {
@@ -173,19 +198,21 @@
 
     .section {
         /* margin: 0 2rem; */
-        padding: 0 4rem 2rem;
+        padding: 0 6rem 2rem;
     }
 
-    .immo-teaser-slider > .slider {
-        height: 40vh;
-        width: 80%;
-    }
+    .immo-teaser-slider {
+        .slider {
+            /* height: 40vh; */
+            width: 80%;
+        }
+    } 
 }
 
 @media (min-width: 1024px) {
     .section {
         /* margin: 0 6rem; */
-        padding: 0 6rem 2rem;
+        padding: 0 10rem 2rem;
     }
 
     .feedback {
@@ -199,7 +226,7 @@
 
 @media (min-width: 1200px) {
     .section {
-        padding: 0 10rem 2rem;
+        padding: 0 12rem 2rem;
     }
 }
 

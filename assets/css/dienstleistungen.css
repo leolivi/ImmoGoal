@@ -1,0 +1,31 @@
+/* .accordion-container {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    .active, :hover {
+        background-color: #ccc;
+    }
+} */
+
+.panel {
+    padding: 0 18px;
+    background-color: var(--background-color-dm);
+    display: none;
+    overflow: hidden;
+}
+
+
+
+  /* Darkmode */
+  @media (prefers-color-scheme: dark) {
+    .panel {
+        background-color: var(--background-color-lm);
+    }
+  }
