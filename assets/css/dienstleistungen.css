@@ -1,24 +1,69 @@
-/* .accordion-container {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+/* Title Section */
+.title-section {
+    padding: 1rem 2rem 0;
+    height: auto;
+    border-bottom: 2px solid var(--text-color-dm);
+    margin: 0 2rem;
 
-    .active, :hover {
-        background-color: #ccc;
+    div {
+        margin: 0rem 0rem 2rem;
     }
-} */
+}
+
+/* Dienstleistungen Section */
+.default-section{
+    padding: 0 2rem 2rem;
+    /* margin: 0 2rem; */
+}
+.container {
+    border-bottom: 2px solid var(--text-color-lm);
+    padding: 2rem 2rem;
+
+    h2 {
+        padding-bottom: 1rem;
+    }
+
+    p {
+        padding-bottom: 1rem;
+    }
+
+    .accordion {
+        margin-bottom: 1rem;
+    }
+
+    i {
+        color: var(--background-color-dm);
+        padding-left: 10px;
+    }
+}
+
+.container:last-child {
+    border-bottom: none;
+}
+
+.accordion.active {
+    i {
+        rotate: 90deg;
+        transform: translateX(-5px);
+        margin-left: 5px;
+    }
+}
 
 .panel {
-    padding: 0 18px;
-    background-color: var(--background-color-dm);
+    padding: 0 1rem;
+    background-color: var(--background-color-lm);
     display: none;
     overflow: hidden;
+    color: var(--text-color-lm);
+
+    ul {
+        padding-bottom: 1rem;
+
+        li:hover {
+            font-family: var(--body-font);
+            color: var(--background-color-dm);
+        }
+    }
 }
 
 
@@ -26,6 +71,32 @@
   /* Darkmode */
   @media (prefers-color-scheme: dark) {
     .panel {
-        background-color: var(--background-color-lm);
+        background-color: var(--background-color-dm);
+        color: var(--text-color-dm);
+
+        ul > li:hover {
+            color: var(--background-color-lm);
+        }
+    }
+
+    .title-section {
+        border-bottom: 2px solid var(--text-color-lm);
+    }
+
+    .container {
+        border-bottom: 2px solid var(--text-color-dm);
     }
   }
+
+
+  /* Responsiveness */
+/* 
+@media (min-width: 479px) {
+    .default-section {
+        padding: 0 2rem 2rem;
+    }     
+}
+
+  .default-section{
+    margin: 0 2rem;
+} */

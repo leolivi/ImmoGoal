@@ -12,7 +12,7 @@
     --heading-font: "BarlowSemiBold", "sans-serif";
     --quotation-font: "BarlowLightItalic", "sans-serif";
     --teaser-size: 2.2rem;
-    --teaser-mobile-size: 1.2rem;
+    --teaser-mobile-size: 1.5rem;
     --h1-size: 1.5rem,
     --h1-mobile-size: 1rem,
     --text-size: 1.5rem;
@@ -80,15 +80,11 @@ p, li, span {
     color: var(--text-color-lm);
 }
 
-.small {
+small {
     font-size: var(--small-mobile-size);
     color: var(--text-color-lm);
+    font-family: var(--body-font);
 }
-
-/* .small >a:hover {
-    font-family: var(--heading-font);
-    color: var(--text-color-lm);
-} */
 
 .button {
     font-family: var(--heading-font);
@@ -98,6 +94,18 @@ p, li, span {
 }
 
 .button:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-color-lm);
+}
+
+.button > a {
+    font-family: var(--heading-font);
+    font-size: var(--small-mobile-size);
+    background-color: var(--background-color-dm);
+    color: var(--text-color-dm);
+}
+
+.button > a:hover {
     background-color: var(--highlight-color);
     color: var(--text-color-lm);
 }
@@ -339,6 +347,11 @@ footer {
         color: var(--text-color-lm);
     }
 
+    .button>a {
+        background-color: var(--background-color-lm);
+        color: var(--text-color-lm);
+    }
+
     .arrow-lm {
         background-color: var(--background-color-lm);
         i {
@@ -391,6 +404,10 @@ footer {
         .logo > img {
             width: 8rem;
         }
+    }
+
+    footer {
+        display: none;
     }
 }
 

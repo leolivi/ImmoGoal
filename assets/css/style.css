@@ -10,7 +10,7 @@
     }
 }
 
-.image-container-homepage {
+.image-container-title-section {
     height: 30vh;
     width: 100%;
     display: flex;
@@ -40,10 +40,6 @@
     margin: 0 2rem;
     padding: 0 0rem 2rem;
 
-    h2 {
-        padding: 2rem 2rem 1.5rem;
-    }
-
     .left {
         transform: translateX(10px);
     }
@@ -51,6 +47,10 @@
     .right {
         transform: translateX(-10px);
     }
+}
+
+.immo-teaser > h2, .feedback > h2 {
+    padding: 2rem 2rem 1.5rem;
 }
 
 /* Immo Teaser Section */
@@ -114,7 +114,6 @@
 
         .quotation {
             hyphens: auto;
-            /* text-align: justify; */
         }
     }
 
@@ -176,7 +175,7 @@
 }
 
 @media (min-width: 480px) {
-    .image-container-homepage > img {
+    .image-container-title-section > img {
         width: 70%;
     }
 
@@ -218,16 +217,17 @@
     .feedback {
         padding: 0 6rem 6rem;
     }
-
-    footer {
-        display: none;
-    }
 }
 
 @media (min-width: 1200px) {
     .section {
         padding: 0 12rem 2rem;
     }
+}
+
+/* Overwritings */
+.feedback {
+    padding-bottom: 5rem;
 }
 
 /* ---------- To Do's ---------- */
