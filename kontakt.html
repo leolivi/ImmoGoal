@@ -8,6 +8,7 @@
     <!-- Stylelinks -->
     <link rel="stylesheet" href="assets/css/universal.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <!-- External Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Javascript -->
@@ -49,8 +50,51 @@
     <div class="desktop-container">
         <!-- Main -->
         <main>
-            
+            <!-- Title Section -->
+            <section class="title-section">
+                <div><h1>- Kontakt</h1></div>
+                <div class="contact-teaser"><p class="teaser">Ich freue mich, von Ihnen zu hören!</p></div>
+            </section>
+            <!-- Contact Section -->
+            <section class="kontakt default-section">
+                <div class="kontakt-daten container">
+                    <ul>
+                        <li>E-mail</li>
+                        <li><a href="mailto:info@immogoal.ch">info@immogoal.ch</a></li>
+                    </ul>
+                    <ul>
+                        <li>Telefon</li>
+                        <li><a href="tel:+41 79 817 83 82">+41 79 817 83 82</a></li>
+                    </ul>
+                    <ul>
+                        <li>Adresse</li>
+                        <li><a href="map:Reinacherstrasse 22, 4053 Basel">Reinacherstrasse 22 <br>4053 Basel <br></a>
+                            <a href="map:Pfeffingerweg 28, 4224 Nenzlingen">Pfeffingerweg 28 <br>4224 Nenzlingen</a></li>
+                    </ul>
+                    <div class="button-container">
+                        <button class="formular button">Zum Formular<i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="formular container">
+                    <form action="">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+
+                        <label for="telefon"></label>
+                        <input type="text" name="telefon" id="telefon" placeholder="Telefon">
+
+                        <label for="email"></label>
+                        <input type="text" name="email" id="email" placeholder="E-Mail">
+
+                        <label for="nachricht"></label>
+                        <input type="textarea" name="nachricht" id="nachricht" placeholder="Nachricht">
+
+                        <button class="contactform-btn button" type="submit" name="absenden" id="absenden">Absenden</button>
+                    </form>
+                </div>
+            </section>
         </main>
+    <!-- Footer -->
     <footer>
         <ul class="footer-container">
             <li><a href="immobilien.html">Immobilien</a></li>

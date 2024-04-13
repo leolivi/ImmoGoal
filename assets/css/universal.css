@@ -110,6 +110,14 @@ small {
     color: var(--text-color-lm);
 }
 
+.button > i {
+    color: var(--text-color-dm);
+}
+
+.button > i:hover {
+    color: var(--text-color-lm);
+}
+
 .quotation {
     font-family: var(--quotation-font);
     font-size: var(--small-mobile-size);
@@ -350,6 +358,20 @@ footer {
     .button>a {
         background-color: var(--background-color-lm);
         color: var(--text-color-lm);
+    }
+    
+    .button > a:hover {
+        background-color: var(--highlight-color);
+        color: var(--text-color-lm);
+        font-family: (var(--heading-font));
+    }
+
+    .button > i {
+        color: var(--text-color-lm);
+    }
+    
+    .button > i:hover {
+        color: var(--text-color-dm);
     }
 
     .arrow-lm {

@@ -1,0 +1,158 @@
+/* Main */
+.contact-teaser {
+    display: flex;
+    justify-content: flex-end;
+
+    .teaser {
+        max-width: 80%;
+    }
+}
+
+/* Kontakt Daten */
+.kontakt-daten {
+    border-bottom: none;
+
+    ul {
+        border-bottom: 2px solid var(--text-color-lm);
+        padding: 2rem 2rem;
+
+        li:first-child {
+            font-family: var(--heading-font);
+            margin-bottom: 10px;
+
+            :hover {
+                color: var(--text-color-lm);
+            }
+        }
+
+        li:last-child:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+
+    .formular {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        i {
+            margin-top: 5px;
+            transform: translateX(-5px);
+        }
+    }
+}
+
+/* Formular */
+.formular > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+
+    input {
+        background-image:none;
+        background-color:transparent;
+        box-shadow: none;
+        width: 100%;
+        height: 3rem;
+        border: 2px solid var(--background-color-dm);
+        padding: 1rem 1rem;
+        font-family: var(--body-font);
+        color: var(--text-color-lm);
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+        font-family: var(--body-font);
+        color: var(--text-color-lm);
+    }
+
+    input:focus {
+        border: 4px solid var(--background-color-dm);
+        outline: none;
+    }
+
+    #nachricht {
+        height: 5rem;
+        text-align: start;
+    }
+
+    .contactform-btn {
+        margin-top: 1rem;
+    }
+}
+
+
+
+/* Media Queries */
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .kontakt-daten {
+        ul {
+            border-bottom: 2px solid var(--text-color-dm);
+            li:first-child:hover {
+                color: var(--text-color-dm);
+            }
+        }
+    }
+
+    .formular > form input {
+        border: 2px solid var(--background-color-lm);
+        color: var(--text-color-dm);
+    }
+
+    .formular > form input::placeholder {
+        color: var(--text-color-dm);
+    }
+
+    .formular > form input:focus {
+        border: 4px solid var(--background-color-lm);
+        /* outline: none; */
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 479px) {
+    .kontakt-daten > ul {
+        padding: 2rem 0rem;
+    }
+
+    .contact-teaser {
+        justify-content: flex-start;
+
+        p {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 478px) {
+    .contact-teaser > p {
+            width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .kontakt {
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .kontakt {
+        padding: 0 7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .kontakt {
+        padding: 0 15rem;
+    }
+}

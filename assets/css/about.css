@@ -1,0 +1,70 @@
+
+
+/* Timeline Container */
+.timeline-container {
+	height: fit-content;
+	/* width: 400px; */
+}
+
+.timeline-item {
+	position: relative;
+	width: auto;
+	padding-left: 1rem;
+	margin: 1rem 1rem;
+}
+
+.timeline-item:after, .dot {
+	position: absolute;
+	content: '';
+}
+
+.timeline-item:after {
+	left: 0;
+	top: 10px;
+	height: 130%;
+	width: 0px;
+	border: 2px solid var(--background-color-lm);
+	border-radius: 10px;
+}
+
+.timeline-item:last-child:after {
+	height: 0;
+}
+
+.dot {
+	left: -8px;
+	top: 10px;
+	height: 20px;
+	width: 20px;
+	background-color: var(--background-color-lm);
+	border-radius: 50%;
+    z-index: 10;  
+}
+
+.dot:hover {
+    background-color: var(--highlight-color);
+}
+
+.description-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 0.5rem;
+    line-height: 1;
+
+    span {
+        font-size: var(--small-mobile-size);
+    }
+}
+
+
+/* Meine Person Section */
+.person {
+    border-bottom: none;
+    
+    img {
+        width: 80%;
+        height: 30vh;
+        object-fit: cover;
+    }
+}
