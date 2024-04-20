@@ -1,0 +1,40 @@
+.immobilien-teaser {
+    display: flex;
+    justify-content: center;
+}
+
+.container-wohnung {
+    border-bottom: 2px solid var(--text-color-dm);
+    /* padding: 0; */
+
+    h2 {
+        padding: 2rem 2rem 1.5rem;
+    }
+}
+
+.container-wohnung:last-child {
+    border-bottom: none;
+}
+
+
+.image-wohnung {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+
+.wohnung-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .wohnung {
+        border-bottom: 2px solid var(--text-color-dm);
+    }
+}

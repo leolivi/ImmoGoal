@@ -1,4 +1,7 @@
-
+/* Title Section */
+.title-img-container > img {
+    width: 60%;
+}
 
 /* Timeline Container */
 .timeline-container {
@@ -32,12 +35,12 @@
 }
 
 .dot {
-	left: -8px;
-	top: 10px;
-	height: 20px;
-	width: 20px;
 	background-color: var(--background-color-lm);
 	border-radius: 50%;
+	height: 20px;
+	left: -8px;
+	top: 10px;
+	width: 20px;
     z-index: 10;  
 }
 
@@ -61,10 +64,18 @@
 /* Meine Person Section */
 .person {
     border-bottom: none;
-    
-    img {
-        width: 80%;
-        height: 30vh;
-        object-fit: cover;
+
+    div {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 2rem;
+
+        img {
+            width: 60%;
+            height: 30vh;
+            object-fit: cover;
+        }
     }
+
+    
 }
