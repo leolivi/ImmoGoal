@@ -14,6 +14,7 @@
     <!-- Javascript -->
     <script src="assets/javascript/appearance-toggle.js" defer></script>
     <script src="assets/javascript/burger-menu.js" defer></script>
+    <script src="assets/javascript/active-nav.js" defer></script>
 </head>
 <body>
     <div class="desktop-container">
@@ -33,11 +34,11 @@
             <div class="nav-section">
                 <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
                 <ul class="nav-desktop-container">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="immobilien.html">Immobilien</a></li>
-                    <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                    <li><a href="about.html">Über mich</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a id="immobilien" href="immobilien.html">Immobilien</a></li>
+                    <li><a id="dienstleistungen" href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li><a id="about" href="about.html">Über mich</a></li>
+                    <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
                     <li class="nav-desktop-grid">
                         <div class="small"><a href="datenschutz.html">Impressum & </a><a href="datenschutz.html">Datenschutz</a></div>
                     </li>
@@ -50,13 +51,13 @@
         </nav>
     </div>
     <div class="desktop-container">
-        <!-- Main -->
-        <main>
+        <!-- About Content -->
+        <section>
             <!-- Title Section -->
             <section class="title-section">
                 <div><h1>- Über mich</h1></div>
                 <div><p class="teaser">Engagement & Leidenschaft</p></div>
-                <div class="image-container-title-section title-img-container"><img src="assets/illustrations/images/image-about-professional.jpg" alt=""></div>
+                <div class="image-container-title-section title-img-container"><img src="assets/illustrations/images/image-about-professional.jpg" alt="Bild des Marklers hinter der Webseite"></div>
 <!-- Add proper Image -->
 <!-- Add WebP Option!! -->
             </section>
@@ -101,7 +102,7 @@
                 <!-- Meine Person -->
                 <div class="person container">
                     <h2>Meine Person</h2>
-                    <div><img src="assets/illustrations/images/image-about-private.jpg" alt=""></div>
+                    <div><img src="assets/illustrations/images/image-about-private.jpg" alt="Bild des Marklers auf dem Fussballfeld"></div>
                     <p>Als Fussballer verfolge ich seit Jahren den Erfolg resp. das Erfolgserlebnis auf dem Spielfeld. Neben Disziplin und Hingabe gehören tägliches Training und 100 Prozent Einsatz zum Alltag. <br> <br> Diese Disziplin, Einsatz und den Erfolgstrieb ist somit in meiner Person verankert und stetiger Begleiter auf dem Platz, beim Immobilienverkauf oder auch im Privatleben.</p>
 <!-- Add img and webP -->
                 </div>
@@ -111,7 +112,7 @@
                     <button class="contact button"><a href="kontakt.html">Kontakt</a></button>
                 </div>
             </section>
-        </main>
+        </section>
     <footer>
         <ul class="footer-container">
             <li><a href="immobilien.html">Immobilien</a></li>

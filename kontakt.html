@@ -15,6 +15,8 @@
     <script src="assets/javascript/appearance-toggle.js" defer></script>
     <script src="assets/javascript/burger-menu.js" defer></script>
     <script src="assets/javascript/scroll-down.js" defer></script>
+    <script src="assets/javascript/contact-alert.js" defer></script>
+    <script src="assets/javascript/active-nav.js" defer></script>    
 </head>
 <body>
     <div class="desktop-container">
@@ -34,11 +36,11 @@
             <div class="nav-section">
                 <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
                 <ul class="nav-desktop-container">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="immobilien.html">Immobilien</a></li>
-                    <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                    <li><a href="about.html">Über mich</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a id="immobilien" href="immobilien.html">Immobilien</a></li>
+                    <li><a id="dienstleistungen" href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li><a id="about" href="about.html">Über mich</a></li>
+                    <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
                     <li class="nav-desktop-grid">
                         <div class="small"><a href="datenschutz.html">Impressum & </a><a href="datenschutz.html">Datenschutz</a></div>
                     </li>
@@ -51,8 +53,8 @@
         </nav>
     </div>
     <div class="desktop-container">
-        <!-- Main -->
-        <main>
+        <!-- Kontakt Content -->
+        <section>
             <!-- Title Section -->
             <section class="title-section">
                 <div><h1>- Kontakt</h1></div>
@@ -96,7 +98,7 @@
                     </form>
                 </div>
             </section>
-        </main>
+        </section>
     <!-- Footer -->
     <footer>
         <ul class="footer-container">

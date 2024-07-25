@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Javascript -->
     <script src="assets/javascript/appearance-toggle.js" defer></script>
+    <script src="assets/javascript/active-nav.js" defer></script>
 <body>
-    <header>
+    <header class="nav-header">
         <nav>
             <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
             <button class="burger-icon">
@@ -21,19 +22,19 @@
             </button>
         </nav>
     </header>
-    <main class="navigation-container">
+    <section class="navigation-container">
         <ul class="footer-container">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="immobilien.html">Immobilien</a></li>
-            <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-            <li><a href="about.html">Über mich</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a id="home" href="index.html">Home</a></li>
+            <li><a id="immobilien" href="immobilien.html">Immobilien</a></li>
+            <li><a id="dienstleistungen" href="dienstleistungen.html">Dienstleistungen</a></li>
+            <li><a id="about" href="about.html">Über mich</a></li>
+            <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
         </ul>
         <div class="menu-toggle-container">
             <i id="appearance-switch" class="fa-solid fa-circle-half-stroke" style="cursor: pointer;"></i>
             <!-- <div><span>DE/</span><span>EN/</span><span>FR</span></div> -->
         </div>
-    </main>
+    </section>
     <script>
         // close-menu.js
         document.addEventListener('DOMContentLoaded', () => {

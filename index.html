@@ -13,6 +13,8 @@
     <!-- Javascript -->
     <script src="assets/javascript/appearance-toggle.js" defer></script>
     <script src="assets/javascript/burger-menu.js" defer></script>
+    <script src="assets/javascript/slider.js" defer></script>
+    <script src="assets/javascript/active-nav.js" defer></script>
 </head>
 <body>
 <div class="desktop-container">
@@ -32,11 +34,11 @@
         <div class="nav-section">
             <a class="logo" href="index.html"><img class="lm" src="assets/illustrations/logo/Wordmark-lm.svg" alt="logo immogoal and get to homepage"><img class="dm" src="assets/illustrations/logo/Wordmark-dm.svg" alt="logo immogoal and get to homepage"></a>
             <ul class="nav-desktop-container">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="immobilien.html">Immobilien</a></li>
-                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                <li><a href="about.html">Über mich</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="immobilien" href="immobilien.html">Immobilien</a></li>
+                <li><a id="dienstleistungen" href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a id="about" href="about.html">Über mich</a></li>
+                <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
                 <li class="nav-desktop-grid">
                     <div class="small"><a href="datenschutz.html">Impressum & </a><a href="datenschutz.html">Datenschutz</a></div>
                 </li>
@@ -55,7 +57,7 @@
         <section class="landingpage">
             <h1 style="display: none;">-Homepage</h1>
             <div><p class="teaser">Professioneller Partner <br> Individuelle Lösungen <br> In Ihrer Region</p></div>
-            <div class="image-container-title-section"><img src="assets/illustrations/images/image-building-hp.jpg" alt=""></div>
+            <div class="image-container-title-section"><img src="assets/illustrations/images/image-building-hp.jpg" alt="Ein Glashochhaus aus der Tiefe aufgenommen"></div>
 <!-- Add WebP Option!! -->
             <div>
                 <ul class="services-overview">
@@ -70,11 +72,13 @@
         <section class="immo-teaser section">
             <h2>Immobilien</h2>
             <div class="immo-teaser-slider">
-                <span class="arrow-lm left"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="arrow-lm left" id="prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></span>
                 <div class="slider">
-                    <img class="slides" src="assets/illustrations/images/image-immobilie.jpg" alt="">
+                    <div class="slide"><img class="slides" src="assets/illustrations/images/image-immobilie.jpg" alt=""></div>
+                    <div class="slide"><img class="slides" src="assets/illustrations/images/test.jpg" alt=""></div>
+                    <div class="slide"><img class="slides" src="assets/illustrations/images/test2.jpg" alt=""></div>
                 </div>
-                <span class="arrow-lm right"><i class="fa-solid fa-chevron-right"></i></span>
+                <span class="arrow-lm right" id="next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></span>
             </div>
             <!-- <div class="dot-container">
                 <div class="dot"></div>

@@ -86,7 +86,7 @@ p, li, span, th {
     color: var(--text-color-lm);
 }
 
-small {
+.small {
     font-size: var(--small-mobile-size);
     color: var(--text-color-lm);
     font-family: var(--body-font);
@@ -175,6 +175,7 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 20;
 
     i {
         color: var(--background-color-lm);
@@ -275,6 +276,11 @@ header {
         }
     }
 }
+
+.active {
+    font-family: var(--heading-font);
+}
+
 
 /* Footer */
 footer {
@@ -397,6 +403,10 @@ footer {
     body.dark-mode .nav-desktop-menu .nav-desktop-container > li {
         border-bottom: 2px solid var(--text-color-dm);
     }
+
+    body.dark-mode .nav-desktop-menu .nav-desktop-container > li:last-child {
+        border-bottom: none;
+    }
     
     body.dark-mode .menu-toggle-container > i {
         cursor: pointer;
@@ -414,6 +424,10 @@ footer {
     
     body.dark-mode footer .footer-container > li {
         border-bottom: 2px solid var(--text-color-dm);
+    }
+
+    body.dark-mode footer .footer-container > li:last-child {
+        border-bottom: none;
     }
 }
 

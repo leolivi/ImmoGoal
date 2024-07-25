@@ -14,6 +14,7 @@
     <!-- Javascript -->
     <script src="assets/javascript/appearance-toggle.js" defer></script>
     <script src="assets/javascript/burger-menu.js" defer></script>
+    <script src="assets/javascript/slider.js" defer></script>
 </head>
 <body>
     <div class="desktop-container">
@@ -50,8 +51,8 @@
         </nav>
     </div>
     <div class="desktop-container">
-        <!-- Main -->
-        <main>
+        <!-- Immobilien Section -->
+        <section>
              <!-- Title Section -->
              <section class="title-section">
                 <div><h1>- Immobilien / Objekt</h1></div>
@@ -107,12 +108,14 @@
                 </div>
                     <section class="image-container immo-teaser section ">
                         <h2>Bilder</h2>
-                        <div class="immo-teaser-slider">
-                            <span class="arrow-lm left"><i class="fa-solid fa-chevron-left"></i></span>
+                        <div class="immo-teaser-slider slider">
+                            <span class="arrow-lm left" id="prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></span>
                             <div class="slider">
-                                <img class="slides" src="assets/illustrations/images/image-immobilie.jpg" alt="">
+                                <div class="slide"><img class="slides" src="assets/illustrations/images/image-immobilie.jpg" alt=""></div>
+                                <div class="slide"><img class="slides" src="assets/illustrations/images/test.jpg" alt=""></div>
+                                <div class="slide"><img class="slides" src="assets/illustrations/images/test2.jpg" alt=""></div>
                             </div>
-                            <span class="arrow-lm right"><i class="fa-solid fa-chevron-right"></i></span>
+                            <span class="arrow-lm right" id="next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></span>
                         </div>
                         <!-- <div class="dot-container">
                             <div class="dot"></div>
@@ -126,7 +129,7 @@
                     </div>
                 
             </section>
-        </main>
+        </section>
     <footer>
         <ul class="footer-container">
             <li><a href="immobilien.html">Immobilien</a></li>
