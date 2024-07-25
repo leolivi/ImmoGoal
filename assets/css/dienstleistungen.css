@@ -8,18 +8,20 @@
 }
 
 .panel {
-    padding: 0 1rem;
     background-color: var(--background-color-lm);
     display: none;
     overflow: hidden;
     color: var(--text-color-lm);
 
     ul {
-        padding-bottom: 1rem;
+        background: var(--background-color-dm);
+        width: fit-content;
+        padding: 1rem 1rem 1rem 2rem;
+        margin: 0 0 1rem 0;
 
-        li:hover {
-            font-family: var(--body-font);
-            color: var(--background-color-dm);
+        li {
+            list-style: disc;
+            color: var(--text-color-dm);
         }
     }
 }
@@ -32,8 +34,12 @@
         background-color: var(--background-color-dm);
         color: var(--text-color-dm);
 
-        ul > li:hover {
-            color: var(--background-color-lm);
+        ul {
+            background: var(--background-color-lm);
+    
+            li {
+                color: var(--text-color-lm);
+            }
         }
     }
   }

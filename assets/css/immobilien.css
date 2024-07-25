@@ -3,9 +3,14 @@
     justify-content: center;
 }
 
+.wohnungen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
 .container-wohnung {
-    border-bottom: 2px solid var(--text-color-dm);
-    /* padding: 0; */
 
     h2 {
         padding: 2rem 2rem 1.5rem;
@@ -33,8 +38,135 @@
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 950px) {
+    .wohnungen {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+/* Objekt */
+.objekt {
+    margin: 0 8rem 0;
+
+    .container-wohnung {
+        border-bottom: 2px solid var(--text-color-lm);
+        padding: 0 2rem 2rem;
+    }
+
+    .container-wohnung {
+        h2 {
+            padding: 2rem 0rem 1.5rem;
+        }
+    }
+
+    .image-wohnung {
+        height: 40vh;
+    }
+
+    h3 {
+        font-family: var(--heading-font);
+    }
+}
+
+.details:nth-of-type(2) {
+    border-bottom: 2px solid var(--text-color-lm);
+}
+
+.costs {
+    padding: 0 2rem 2rem;
+
+
+    h3 {
+        margin-top: 2rem;
+        font-family: var(--heading-font);
+    }
+
+    .table {
+        .table__cell:last-child {
+            text-align: center;
+        }
+    }
+}
+
+.table {
+  width: 100%;
+  border-radius: 4px;
+  max-width: 800px;
+  margin-top: 2rem;
+  padding-right: 30%;
+
+  tbody {
+    margin: 2rem 0;
+  }
+
+  .table__cell {
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+}
+
+.image-container {
+    border-bottom: none;
+    padding: 0 2rem 2rem;
+
+    slider {
+        height: 40vh;
+    }
+
+    h2 {
+       padding: 2rem 0 1.5rem;
+       transform: translateX(-2rem);
+    }
+}
+
+.information-object {
+    padding: 0 2rem 2rem;
+    p {
+        margin-bottom: 1rem;
+    }
+
+    a:hover {
+        font-family: var(--heading-font)
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .table {
+        padding-right: 20%;
+    }
+
+    .objekt {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .table {
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .table {
+        padding-right: 0%;
+    }
+}
+
+
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    .wohnung {
+    .container-wohnung {
+        border-bottom: 2px solid var(--text-color-dm) !important;
+    }
+
+    .details:nth-of-type(2) {
         border-bottom: 2px solid var(--text-color-dm);
     }
 }

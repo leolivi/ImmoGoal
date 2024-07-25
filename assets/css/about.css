@@ -26,7 +26,7 @@
 	top: 10px;
 	height: 130%;
 	width: 0px;
-	border: 2px solid var(--background-color-lm);
+	border: 2px solid var(--background-color-dm);
 	border-radius: 10px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .dot {
-	background-color: var(--background-color-lm);
+	background-color: var(--background-color-dm);
 	border-radius: 50%;
 	height: 20px;
 	left: -8px;
@@ -78,4 +78,20 @@
     }
 
     
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	.dot {
+		background-color: var(--background-color-lm);
+	}
+
+	.dot:hover {
+		background-color: var(--highlight-color);
+	}
+
+	.timeline-item:after {
+		border: 2px solid var(--background-color-lm);
+	}
+
 }

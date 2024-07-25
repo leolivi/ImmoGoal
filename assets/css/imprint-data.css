@@ -1,0 +1,50 @@
+/* Impressum */
+.imprint-container {
+    padding: 0 3rem;
+
+    p {
+        padding: 1rem 0 4rem;
+    }
+}
+
+/* Datenschutzerklärung */
+.data-protection-section{
+    padding: 0 3rem;
+
+    h3 {
+        font-style: italic;
+        padding: 0.5rem 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+    li {
+        cursor: auto;
+        list-style: none;
+    }
+    
+    li:hover {
+        color: var(--text-color-lm); 
+        font-family: var(--body-font);
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .desktop-container {
+        background-color: var(--background-color-dm);
+    }
+
+    h4 {
+        color: var(--text-color-dm);
+
+    }
+
+    .data-protection-section {
+        li:hover {
+            color: var(--text-color-dm); 
+            font-family: var(--body-font);
+        }
+    }
+}
