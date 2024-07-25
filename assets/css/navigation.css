@@ -19,11 +19,21 @@
     justify-content: space-between;
 }
 
+.appearance-switch:hover {
+    color: var(--background-color-dm);
+}
+
 
 
 /* Dark Mode */
-/* @media (prefers-color-scheme: dark) {
-    body {
+@media (prefers-color-scheme: dark) {
+    body.dark-mode {
         background-color: var(--background-color-dm);
     }
-} */
+
+    body.dark-mode .footer-container {
+        li {
+            border-bottom: 2px solid var(--text-color-dm);
+        }
+    }
+}

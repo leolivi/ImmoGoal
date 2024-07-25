@@ -322,98 +322,98 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     
-    body, header {
+    body.dark-mode, body.dark-mode header {
         background-color: var(--background-color-dm);
     }
 
-    .dm {
+    body.dark-mode .dm {
         display: block;
     }
 
-    .lm {
+    body.dark-mode .lm {
         display: none;
     }
 
-    li:hover {
-        color: var(--highlight-color);
-        font-family: var(--body-font);
-    }
-
-    a:hover {
+    body.dark-mode li:hover,
+    body.dark-mode a:hover {
         color: var(--highlight-color);
         font-family: var(--body-font);
     }
 
     /* Header */
-    .burger-icon {
+    body.dark-mode .burger-icon {
         color: var(--background-color-lm);
         margin: none;
     }
 
     /* Fonts */
-    h1, h2, h3, h4 small, p, li, span, i, a, .teaser, th  {
+    body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode small, body.dark-mode p, body.dark-mode li, body.dark-mode span, body.dark-mode i, body.dark-mode a, body.dark-mode .teaser, body.dark-mode th  {
         color: var(--text-color-dm);
     }
 
     /* Buttons and Arrows */
-    .button {
+    body.dark-mode .button {
         background-color: var(--background-color-lm);
-        a {
-            color: var(--text-color-lm);
-        }
-        
     }
 
-    .button >a:hover {
-        font-family: var(--heading-font);
+    body.dark-mode .button:hover {
+        background-color: var(--highlight-color);
     }
-
-    .button > i {
+    
+    body.dark-mode .button a {
         color: var(--text-color-lm);
     }
     
-    .button > i:hover {
+    body.dark-mode .button >a:hover {
+        font-family: var(--heading-font);
+    }
+    
+    body.dark-mode .button > i {
+        color: var(--text-color-lm);
+    }
+    
+    body.dark-mode .button > i:hover {
         color: var(--text-color-dm);
     }
-
-    .arrow-lm {
+    
+    body.dark-mode .arrow-lm {
         background-color: var(--background-color-lm);
-        i {
-            color: var(--background-color-dm);
-        }
     }
-
-    .arrow-lm:hover {
+    
+    body.dark-mode .arrow-lm i {
+        color: var(--background-color-dm);
+    }
+    
+    body.dark-mode .arrow-lm:hover {
         background-color: var(--highlight-color);
     }
 
     /* Nav Desktop Menu */
-    .nav-desktop-menu {
+    body.dark-mode .nav-desktop-menu {
         background-color: var(--background-color-dm);
         border-left: 2px solid var(--text-color-dm);
-
-        .nav-desktop-container > li {
-            border-bottom: 2px solid var(--text-color-dm);
-        }
-
-        .menu-toggle-container > i {
-            
-            cursor: pointer;
-
-            :hover {
-                color: var(--highlight-color);
-            }
-        }
+    }
+    
+    body.dark-mode .nav-desktop-menu .nav-desktop-container > li {
+        border-bottom: 2px solid var(--text-color-dm);
+    }
+    
+    body.dark-mode .menu-toggle-container > i {
+        cursor: pointer;
+    }
+    
+    body.dark-mode .menu-toggle-container > i:hover {
+        color: var(--highlight-color);
     }
 
     /* Footer */
-    footer {
+    body.dark-mode footer {
         background-color: var(--background-color-dm);
         border-top: 2px solid var(--text-color-dm);
-
-        .footer-container > li {
-            border-bottom: 2px solid var(--text-color-dm);
-        }
+    }
+    
+    body.dark-mode footer .footer-container > li {
+        border-bottom: 2px solid var(--text-color-dm);
     }
 }
 

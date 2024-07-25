@@ -6,12 +6,14 @@
     <title>Immobilienobjekt ImmoGoal</title>
 
     <!-- Stylelinks -->
+    <link rel="stylesheet" href="assets/css/immobilien.css">
     <link rel="stylesheet" href="assets/css/universal.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/immobilien.css">
     <!-- External Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Javascript -->
+    <script src="assets/javascript/appearance-toggle.js" defer></script>
+    <script src="assets/javascript/burger-menu.js" defer></script>
 </head>
 <body>
     <div class="desktop-container">
@@ -42,7 +44,7 @@
                 </ul>
             </div>
             <div class="menu-toggle-container">
-                <i class="fa-solid fa-circle-half-stroke" style="cursor: pointer;"></i>
+                <i id="appearance-switch" class="fa-solid fa-circle-half-stroke" style="cursor: pointer;"></i>
                 <!-- <p>DE/EN/FR</p> -->
             </div>
         </nav>
@@ -103,7 +105,7 @@
                         </table>
                     </div>
                 </div>
-                    <section class="immo-teaser section image-container">
+                    <section class="image-container immo-teaser section ">
                         <h2>Bilder</h2>
                         <div class="immo-teaser-slider">
                             <span class="arrow-lm left"><i class="fa-solid fa-chevron-left"></i></span>

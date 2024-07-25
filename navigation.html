@@ -11,7 +11,7 @@
     <!-- External Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Javascript -->
-</head>
+    <script src="assets/javascript/appearance-toggle.js" defer></script>
 <body>
     <header>
         <nav>
@@ -29,10 +29,23 @@
             <li><a href="about.html">Über mich</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
-        <div class="navigation-toggles">
-            <i class="fa-solid fa-circle-half-stroke fa-2x" style="cursor: pointer;"></i>
+        <div class="menu-toggle-container">
+            <i id="appearance-switch" class="fa-solid fa-circle-half-stroke" style="cursor: pointer;"></i>
             <!-- <div><span>DE/</span><span>EN/</span><span>FR</span></div> -->
         </div>
     </main>
+    <script>
+        // close-menu.js
+        document.addEventListener('DOMContentLoaded', () => {
+            const closeIcon = document.getElementById('close-icon');
+
+            function goBack() {
+                window.history.back(); // Navigate to the previous page
+            }
+
+            closeIcon.addEventListener('click', goBack);
+        });
+
+    </script>
 </body>
 </html>

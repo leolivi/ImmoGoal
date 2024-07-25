@@ -2,7 +2,7 @@
 .landingpage {
     padding: 1rem 2rem 0;
     height: auto;
-    border-bottom: 2px solid var(--text-color-dm);
+    border-bottom: 2px solid var(--text-color-lm);
     margin: 0 2rem;
 
     div {
@@ -172,32 +172,36 @@
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    main {
+    body.dark-mode main {
         background-color: var(--background-color-dm);
     }
 
-    .landingpage {
+    body.dark-mode .landingpage {
         border-bottom: 2px solid var(--text-color-dm);
     }
 
-    .services-overview {
+    body.dark-mode .services-overview {
         list-style: url("../illustrations/graphics/List-Style_Services-dm.svg")
         /* list-style-image: url("../illustrations/graphics/List-Style_Services-dm.svg"); */
     } 
 
-    .title-section {
+    body.dark-mode .title-section {
         border-bottom: 2px solid var(--text-color-lm);
     }
 
-    .immo-teaser {
+    body.dark-mode .immo-teaser {
         border-bottom: 2px solid var(--text-color-dm);
     }
 
-    .container {
+    body.dark-mode .container {
         border-bottom: 2px solid var(--text-color-dm);
     }
 
-    .feedback-container > .feedback-text-container {
+    body.dark-mode .container:last-child {
+        border-bottom: none;
+    }
+
+    body.dark-mode .feedback-container > .feedback-text-container {
         border: 2px solid var(--background-color-lm);
     }
 

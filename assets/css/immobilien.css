@@ -126,7 +126,7 @@
 }
 
 .information-object {
-    padding: 0 2rem 2rem;
+    padding: 2rem 2rem;
     p {
         margin-bottom: 1rem;
     }
@@ -162,11 +162,15 @@
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    .container-wohnung {
-        border-bottom: 2px solid var(--text-color-dm) !important;
+    body.dark-mode .container-wohnung {
+        border-bottom: 2px solid var(--text-color-dm);
     }
 
-    .details:nth-of-type(2) {
+    body.dark-mode .container-wohnung {
+        border-bottom: none;
+    }
+
+    body.dark-mode .details:nth-of-type(2) {
         border-bottom: 2px solid var(--text-color-dm);
     }
 }

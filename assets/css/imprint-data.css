@@ -9,7 +9,7 @@
 
 /* Datenschutzerklärung */
 .data-protection-section{
-    padding: 0 3rem;
+    padding: 0 3rem 4rem;
 
     h3 {
         font-style: italic;
@@ -32,16 +32,16 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    .desktop-container {
+    body.dark-mode .desktop-container {
         background-color: var(--background-color-dm);
     }
 
-    h4 {
+    body.dark-mode h4 {
         color: var(--text-color-dm);
 
     }
 
-    .data-protection-section {
+    body.dark-mode .data-protection-section {
         li:hover {
             color: var(--text-color-dm); 
             font-family: var(--body-font);

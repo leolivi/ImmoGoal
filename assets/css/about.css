@@ -82,15 +82,15 @@
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-	.dot {
+	body.dark-mode .dot {
 		background-color: var(--background-color-lm);
 	}
 
-	.dot:hover {
+	body.dark-mode .dot:hover {
 		background-color: var(--highlight-color);
 	}
 
-	.timeline-item:after {
+	body.dark-mode .timeline-item:after {
 		border: 2px solid var(--background-color-lm);
 	}
 

@@ -94,7 +94,8 @@
 /* Media Queries */
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    .kontakt-daten {
+    body.dark-mode .kontakt-daten {
+        border-bottom: 0;
         ul {
             border-bottom: 2px solid var(--text-color-dm);
             li:first-child:hover {
@@ -103,16 +104,16 @@
         }
     }
 
-    .formular > form input {
+    body.dark-mode .formular > form input {
         border: 2px solid var(--background-color-lm);
         color: var(--text-color-dm);
     }
 
-    .formular > form input::placeholder {
+    body.dark-mode .formular > form input::placeholder {
         color: var(--text-color-dm);
     }
 
-    .formular > form input:focus {
+    body.dark-mode .formular > form input:focus {
         border: 4px solid var(--background-color-lm);
         /* outline: none; */
     }

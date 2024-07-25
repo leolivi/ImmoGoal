@@ -30,7 +30,7 @@
 
   /* Darkmode */
   @media (prefers-color-scheme: dark) {
-    .panel {
+    body.dark-mode .panel {
         background-color: var(--background-color-dm);
         color: var(--text-color-dm);
 
