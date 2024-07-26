@@ -68,6 +68,30 @@
         color: var(--text-color-lm);
     }
 
+    input::-webkit-input-placeholder {
+        font-size: 1rem;
+        font-family: var(--body-font);
+        color: var(--text-color-lm);
+    }
+
+    input::-moz-placeholder {
+        font-size: 1rem;
+        font-family: var(--body-font);
+        color: var(--text-color-lm);
+    }
+
+    input:-ms-input-placeholder {
+        font-size: 1rem;
+        font-family: var(--body-font);
+        color: var(--text-color-lm);
+    }
+
+    input::-ms-input-placeholder {
+        font-size: 1rem;
+        font-family: var(--body-font);
+        color: var(--text-color-lm);
+    }
+
     input::placeholder {
         font-size: 1rem;
         font-family: var(--body-font);
@@ -106,6 +130,22 @@
 
     body.dark-mode .formular > form input {
         border: 2px solid var(--background-color-lm);
+        color: var(--text-color-dm);
+    }
+
+    body.dark-mode .formular > form input::-webkit-input-placeholder {
+        color: var(--text-color-dm);
+    }
+
+    body.dark-mode .formular > form input::-moz-placeholder {
+        color: var(--text-color-dm);
+    }
+
+    body.dark-mode .formular > form input:-ms-input-placeholder {
+        color: var(--text-color-dm);
+    }
+
+    body.dark-mode .formular > form input::-ms-input-placeholder {
         color: var(--text-color-dm);
     }
 

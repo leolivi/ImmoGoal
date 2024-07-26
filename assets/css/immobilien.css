@@ -32,7 +32,8 @@
 .image-wohnung {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
      /* verkauft */
      opacity: 0.5;
 }

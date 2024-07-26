@@ -19,7 +19,8 @@
     img {
         height: 100%;
         width: 50%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 }
 
@@ -74,11 +75,15 @@
         display: flex;
         align-items: center;
         width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     
         .slider{
             position: relative;
             width: 100%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
             height: fit-content;
             margin: auto;
             overflow: hidden;
@@ -92,14 +97,17 @@
         .slide > img {
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             display: none;
         }
 
         .slide > img.displaySlide {
             display: block;
-            animation-name: fade;
-            animation-duration: 1.5s;
+            -webkit-animation-name: fade;
+                    animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
         }
     }
 
@@ -128,6 +136,11 @@
     } */
 }
 
+@-webkit-keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
 @keyframes fade {
     from {opacity: 0.5}
     to {opacity: 1}
@@ -146,7 +159,9 @@
         width: 100%;
 
         .quotation {
-            hyphens: auto;
+            -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                    hyphens: auto;
         }
     }
 

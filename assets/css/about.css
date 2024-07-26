@@ -5,6 +5,8 @@
 
 /* Timeline Container */
 .timeline-container {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	/* width: 400px; */
 }
@@ -73,7 +75,8 @@
         img {
             width: 60%;
             height: 30vh;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
         }
     }
 

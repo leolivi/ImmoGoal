@@ -13,8 +13,8 @@
     --quotation-font: "BarlowLightItalic", "sans-serif";
     --teaser-size: 2.2rem;
     --teaser-mobile-size: 1.5rem;
-    --h1-size: 1.5rem,
-    --h1-mobile-size: 1rem,
+    --h1-size: 1.5rem,;
+    --h1-mobile-size: 1rem,;
     --text-size: 1.5rem;
     --text-mobile-size: 1.2rem;
     --small-size: 1.2rem;
@@ -215,6 +215,8 @@ header {
 
 .logo > img {
     width: 10rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
