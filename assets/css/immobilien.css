@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.immo-teaser {
+    border-bottom: none;
+}
+
 .wohnungen {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -130,7 +134,7 @@
 }
 
 .image-container {
-    border-bottom: none;
+    border-bottom: none !important;
     padding: 0 2rem 2rem;
 
     slider {
