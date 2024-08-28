@@ -38,10 +38,11 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-     /* verkauft */
-     opacity: 0.5;
-}
-
+    }
+    
+    .verkauft {
+        opacity: 0.5;
+    }
 /* verkauft */
 .verkauft-overlay {
     position: absolute;
