@@ -77,16 +77,21 @@
         width: 100%;
         height: -webkit-fit-content;
         height: -moz-fit-content;
-        height: fit-content;
+        height: 50vh;
     
         .slider{
             position: relative;
             width: 100%;
             height: -webkit-fit-content;
             height: -moz-fit-content;
-            height: fit-content;
+            height: 50vh;
             margin: auto;
             overflow: hidden;
+
+            .slide {
+                -o-object-fit: cover;
+                   object-fit: cover;
+            } 
         }
 
         /* .slide {
@@ -269,7 +274,7 @@
 @media (max-width: 479px) {
     .immo-teaser-slider {
         .slider{
-            height: 20vh; 
+            height: 20vh;
         }
     } 
 }
