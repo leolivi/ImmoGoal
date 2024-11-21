@@ -1,114 +1,108 @@
 .immobilien-teaser {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .immo-teaser {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .wohnungen {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .container-wohnung {
-
-    h2 {
-        padding: 2rem 2rem 1.5rem;
-    }
+  h2 {
+    padding: 2rem 2rem 1.5rem;
+  }
 }
 
 .container-wohnung:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .overview {
-    position: relative;
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 2rem;
-    padding: 0;
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
 .image-wohnung {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    }
-    
-    .verkauft {
-        opacity: 0.5;
-    }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding: 0 0 1.5rem;
+}
+
+.verkauft {
+  opacity: 0.5;
+}
 /* verkauft */
 .verkauft-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    pointer-events: none;
-    width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  pointer-events: none;
+  width: 100%;
 }
 
 .wohnung-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 950px) {
-    .wohnungen {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-    }
+  .wohnungen {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
-
-
-
-
-
 
 /* Objekt */
 .objekt {
-    margin: 0 8rem 0;
+  margin: 0 8rem 0;
 
-    .container-wohnung {
-        border-bottom: 2px solid var(--text-color-lm);
-        padding: 0 2rem 2rem;
-    }
+  .container-wohnung {
+    border-bottom: 2px solid var(--text-color-lm);
+    padding: 0 2rem 2rem;
+  }
 
-    .container-wohnung {
-        h2 {
-            padding: 2rem 0rem 1.5rem;
-        }
+  .container-wohnung {
+    h2 {
+      padding: 2rem 0rem 1.5rem;
     }
+  }
 
-    .image-wohnung {
-        height: 40vh;
-    }
+  .image-wohnung {
+    height: 40vh;
+  }
 
-    h3 {
-        font-family: var(--heading-font);
-    }
+  h3 {
+    font-family: var(--heading-font);
+  }
 }
 
 .details:nth-of-type(2) {
-    border-bottom: 2px solid var(--text-color-lm);
+  border-bottom: 2px solid var(--text-color-lm);
 }
 
 .costs {
-    padding: 0 2rem 2rem;
+  padding: 0 2rem 2rem;
 
-
-    h3 {
-        margin-top: 2rem;
-        font-family: var(--heading-font);
-    }
+  h3 {
+    margin-top: 2rem;
+    font-family: var(--heading-font);
+  }
 }
 
 .table {
@@ -128,107 +122,134 @@
 }
 
 .image-container {
-    border-bottom: none !important;
-    padding: 0 2rem 2rem;
-
-
+  border-bottom: none !important;
 }
-    .immo-teaser {
-    border-bottom: 2px solid var(--text-color-lm);
-    margin: 0 2rem;
+.immo-teaser {
+  border-bottom: 2px solid var(--text-color-lm);
+  margin: 0 2rem;
 
-    .immo-object-slider {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-    
-        .slider{
-            position: relative;
-            width: 100%;
-            height: -webkit-fit-content;
-            height: -moz-fit-content;
-            height: fit-content;
-            margin: auto;
-            overflow: hidden;
-        }
+  .immo-object-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
 
-        .slide {
-            width: 100%;
-            height: 100%;
-        }
-
-        .slide > img {
-            height: 100%;
-            width: 100%;
-            -o-object-fit: cover;
-               object-fit: cover;
-            display: none;
-        }
-
-        .slide > img.displaySlide {
-            display: block;
-            -webkit-animation-name: fade;
-                    animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-                    animation-duration: 1.5s;
-        }
+    .left {
+      transform: translateX(10px);
     }
 
-    h2 {
-       padding: 2rem 0 1.5rem;
-       transform: translateX(-2rem);
+    .right {
+      transform: translateX(-10px);
     }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      margin: auto;
+      overflow: hidden;
     }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide > img {
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      display: none;
+    }
+
+    .slide > img.displaySlide {
+      display: block;
+      -webkit-animation-name: fade;
+      animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+    }
+  }
+
+  h2 {
+    padding: 2rem 0 1.5rem;
+    transform: translateX(-2rem);
+  }
+}
+
+.immo-object-iframe {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 2rem 0rem 0rem;
+}
+
+.immo-object-iframe iframe {
+  width: 100%;
+}
 
 .information-object {
-    padding: 2rem 2rem;
-    p {
-        margin-bottom: 1rem;
-    }
+  padding: 2rem 2rem;
+  p {
+    margin-bottom: 1rem;
+  }
 
-    a:hover {
-        font-family: var(--heading-font)
-    }
+  a:hover {
+    font-family: var(--heading-font);
+  }
 }
 
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-    .table {
-        padding-right: 20%;
-    }
+  .table {
+    padding-right: 20%;
+  }
 
-    .objekt {
-        margin: 0;
-    }
+  .objekt {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .table {
-        padding-right: 10%;
-    }
+  .table {
+    padding-right: 10%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .table {
-        padding-right: 0%;
-    }
+  .table {
+    padding-right: 0%;
+  }
+
+  .image-container {
+    border-bottom: none !important;
+  }
 }
 
+@media screen and (min-width: 1020px) {
+  .immo-teaser .immo-object-slider {
+    padding: 0 4rem;
+  }
+}
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    body.dark-mode .container-wohnung {
-        border-bottom: 2px solid var(--text-color-dm);
-    }
+  body.dark-mode .container-wohnung {
+    border-bottom: 2px solid var(--text-color-dm);
+  }
 
-    body.dark-mode .container-wohnung {
-        border-bottom: none;
-    }
+  body.dark-mode .container-wohnung {
+    border-bottom: none;
+  }
 
-    body.dark-mode .details:nth-of-type(2) {
-        border-bottom: 2px solid var(--text-color-dm);
-    }
+  body.dark-mode .details:nth-of-type(2) {
+    border-bottom: 2px solid var(--text-color-dm);
+  }
 }
